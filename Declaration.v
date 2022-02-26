@@ -4,7 +4,7 @@ module mod_a ( input in1, input in2, output out );
 endmodule
 
 //how to instantiate submodule inside top_module-
-//By position
+By position
 /*
 The syntax to connect wires to ports by position, as it uses a C-like syntax. 
 When instantiating a module, ports are connected left to right according to the module's declaration. For example:
@@ -17,7 +17,7 @@ This instantiates a module of type mod_a and gives it an instance name of "insta
       all instantiations of the module will also need to be found and changed to match the new module.
 */
   
-//By name
+By name
 //Connecting signals to a module's ports by name allows wires to remain correctly connected even if the port list changes.
 
 mod_a instance2 ( .out(wc), .in1(wa), .in2(wb) );
