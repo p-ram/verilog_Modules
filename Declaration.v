@@ -1,8 +1,9 @@
+//sub-module is defined by below code
 module mod_a ( input in1, input in2, output out );
     // Module body
 endmodule
 
-
+//how to instantiate submodule inside top_module-
 By position
 /*
 The syntax to connect wires to ports by position, as it uses a C-like syntax. 
